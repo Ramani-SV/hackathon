@@ -29,7 +29,7 @@ def extract_delays(email_text):
             
             prompt = f"""
 
-            You are extracting manufacturing delays and other specifications info from an email.
+            You are extracting manufacturing delays and other specifications info from an email for all trailer ids mentioned.
 
             Extract trailer repair delay information from the following email text.
             Return ONLY a valid JSON object with the following keys:
@@ -46,6 +46,8 @@ def extract_delays(email_text):
             - If it mentions "training" with days, set training_days accordingly; if training mentioned with no days, training_days = 1.
             - If it says "delayed by X days" and category is unclear, set parts_days = X (default bucket).
             - If a category is not mentioned, use 0.
+                
+            
 
             If a field is missing, return 0. "trailer_id" is required.
             
