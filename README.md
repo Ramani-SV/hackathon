@@ -117,7 +117,7 @@ Important:
 * Do not commit the .env file to GitHub.
 * Add .env to .gitignore.
 
-If you do not have a Gemini API key, request one from Google AI Studio or contact the repository owner for testing access. Free-tier keys may encounter rate limits.
+If you do not have a Gemini API key, request one from Google AI Studio or contact me (Ramani) for testing access. Free-tier keys may encounter rate limits.
 
 5. Run the Application
 
